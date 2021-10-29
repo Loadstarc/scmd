@@ -1,0 +1,11 @@
+# NETWORK INPUTFILE | Molecular type:pentenal (T1) 
+Atnum	=	4
+Elenum	=	3
+Symmfuc_num	= 15	
+Learning_rate	=	0.00001
+IF_restart	= 1
+Batch_size = 2048
+Layer_size = 510
+IF_TRAIN = 1
+IF_TEST = 0
+Gpu_num = 1

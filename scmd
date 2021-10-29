@@ -1,0 +1,42 @@
+#!/share/home/linsc/soft/anaconda3/bin/python3 -u
+import sys,os
+import numpy as np
+from lib.iofile import *
+
+storge_path = '/share/home/linsc/data/Formaldehyde'
+jobtype=sys.argv[1]
+
+# propagating Quasi-classical trajectory using NN-PES
+if (jobtype == 'md'):
+    from lib.md import runMD
+    Samname = sys.argv[2]
+    method = sys.argv[3]
+    cycnum = int(sys.argv[4])
+    if_restart = int(sys.argv[5])
+    #print ('Backup NETWORK')
+    #os.system('cp -r ~/bin/scmd/n1 ./')
+    #os.system('cp -r ~/bin/scmd/n2 ./')
+    runMD(Samname,0.5,method,cycnum,if_restart)
+
+
+#elif (jobtype == 'cross'):
+#    from lib.sampling.cross import cross_sampling
+#    Samname = sys.argv[2]
+#    cycnum = int(sys.argv[3])
+#    cross_sampling(Samname,0.5,cycnum)
+
+elif (jobtype == 'irc'):
+    from lib.analysis.irc import irc_analy
+    filename = sys.argv[2]
+    irc_analy(filename)
+
+elif (jobtype == 'recal'):
+    from lib.analysis.recal import recal_traj
+    filename = sys.argv[2]
+    recal_traj(filename)
+
+elif (jobtype == 'ptinfo'):
+    from lib.analysis.ptinfo import ptinfo
+    filename = sys.argv[2]
+    step = int(sys.argv[3])
+    ptinfo(filename,step)
