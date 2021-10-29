@@ -1,6 +1,6 @@
 Main program
 scmd : Main program of NN-PES MD
-* program "cross: is NOT finished yet, and the folder "tmp" is useless
+* program "cross" is NOT finished yet, and the folder "tmp" is useless
 * MD-simulation should be run with a folder 'initial' which contains all the initial conditions
 
 [Contents]
