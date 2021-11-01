@@ -1,4 +1,4 @@
-#!/share/home/linsc/soft/anaconda3/bin/python3 -u
+#!/usr/bin/python3 -u
 import sys,os
 import numpy as np
 from lib.iofile import *

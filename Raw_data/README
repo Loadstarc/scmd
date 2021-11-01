@@ -1,0 +1,3 @@
+# Text files in this folder is raw data in the Sampling process
+# Each line contains 12 cartesian coordinates (x,y,z of ATOM C,H,H,O) + 1 DFT energy (unit: hartree)
+# All RAW data is shown in this folder (without any filtering process, e.g. clustering..)

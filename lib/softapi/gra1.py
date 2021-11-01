@@ -5,7 +5,7 @@ import copy
 import os,sys
 tf.disable_eager_execution()
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-storge_path = '/share/home/linsc/data/Formaldehyde/scmd'
+storge_path = '/home/loadstar/desktop/scmd'
 Atnum = 4
 Elenum = 3
 Gnum = 15

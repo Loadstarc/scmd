@@ -15,7 +15,7 @@ from lib.softapi.gra2 import gra_n2
 from lib.iofile import ptmat,print_info
 np.set_printoptions(precision=3, suppress=True)
 np.set_printoptions(formatter={'float': '{: 0.9f}'.format})
-storge_path = '/share/home/linsc/data/Formaldehyde/scmd'
+storge_path = '/home/loadstar/desktop/scmd'
 
 class nnpes:
         def __init__(self,atnum,sbl):
